@@ -1,0 +1,55 @@
+/**index.wxss**/
+.content{
+  position: relative;
+  width: 750rpx;
+}
+
+.head{
+  width: 100%;
+  margin: 20rpx 0;
+}
+
+.position{
+  float:left;
+}
+
+.order{
+  clear: left;
+}
+
+.item{
+  display: block;
+  position: relative; 
+  width: 744rpx;
+  margin-top: 5rpx;
+  border: 1rpx solid red;
+  height: 40rpx;
+  line-height: 38rpx;
+  /* border-radius: 5%; */
+}
+
+.item .item-title{
+  font-size: 30rpx; 
+  height: 38rpx; 
+  /* background-color: black; */
+}
+
+.item .item-detail{
+   float: right; 
+  height: 40rpx; 
+  font-size: 30rpx; 
+  /* background-color: black; */
+}
+
+ .map-pointer{
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align:center;
+  color: rgb(204, 0, 51); 
+  font-size: 60rpx; 
+  position: absolute; 
+  z-index: 10;
+  top: 210rpx; 
+  left: 335rpx;
+} 

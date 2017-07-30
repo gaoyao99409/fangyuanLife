@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+  <map
+    id="myMap"
+    style="width: 750rpx; height: 500rpx; top: 0rpx;"
+    latitude="{{latitude}}"
+    longitude="{{longitude}}"
+    markers="{{markers}}"
+    covers="{{covers}}"
+    scale="12"
+    bindregionchange="bindregionchange"
+    >
+  </map>
+  <view class="map-pointer">+</view>
+  <view class="list">
+    <view class="head">
+      <view class="position">
+        当前位置：{{address}}
+      </view>
+      <view class="order">
+        
+      </view>
+    </view>
+    <view class="content">
+      <block wx:for="{{list}}" wx:for-item="item" wx:key="*this">
+        <view class="item">
+          <text class="item-title">{{index + 1}}.{{item.title}}</text>
+          <text class="item-detail">>>></text>
+        </view>
+      </block>
+    </view>
+  </view>
+
+</view>
